@@ -35,8 +35,8 @@ const checkDatabase = () => {
       fetch('/api/transaction/bulk', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${localStorage.getItem('user')}`
+          'Content-Type': 'application/json'
+          
         },
         body: JSON.stringify(getAll.result)
       })
